@@ -1,0 +1,9 @@
+runtime: php55
+api_version: 1
+service: subscriber-php
+threadsafe: true
+
+handlers: 
+- url: /_ah/push-handlers/.*
+  script: index.php
+  login: admin
